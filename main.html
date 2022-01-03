@@ -3,6 +3,7 @@
 
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
         <script src = 'https://aframe.io/releases/1.0.4/aframe.min.js'>
             
         </script>
@@ -16,16 +17,17 @@
         
     </head>
 
-    <body>
+    <body style="margin : 0px; overflow: hidden;">
         <a-scene vr-mode-ui="enabled: false;" embedded arjs="sourceType: webcam; 
         sourceWidth:1280; sourceHeight:960; 
         displayWidth: 1280; displayHeight: 960; 
-        debugUIEnabled: false;" >   
-            
-                 <a-assets>
+        debugUIEnabled: false;" >            
+        
+        
+
+        <a-assets>
             <img id = 'plane' src = './pattern-plane.png'>
 
-            </img>
         </a-assets>
 
         <a-marker type = 'pattern' url = './pattern-plane.patt'>
@@ -33,10 +35,7 @@
                 
             </a-plane>
         </a-marker>
-        </a-scene>
-        
-
-   
+    </a-scene>
     </body>
 
 </html>
